@@ -144,13 +144,32 @@ C:\Users\你的用户名\.codex\skills\yuzhoujun-fig2edit
 
 ## 示例案例
 
-本仓库内置了斑马鱼科研图测试脚本：
+本仓库内置了你这张斑马鱼科研复合图作为最终案例：
+
+```text
+examples/zebrafish/source_zebrafish_tail.png
+```
+
+已生成的最终案例文件：
+
+```text
+examples/zebrafish/output_v8/01_最终文件/zebrafish_masked_fullpanel_editable_v8.pptx
+examples/zebrafish/output_v8/01_最终文件/zebrafish_masked_fullpanel_editable_v8.svg
+examples/zebrafish/output_v8/02_结构与报告/scene_manifest.json
+examples/zebrafish/output_v8/02_结构与报告/run_report.md
+```
+
+重新生成命令：
 
 ```bash
-python3 scripts/prepare_highres_assets.py input.png output/03_高清无损素材/highres --scale 2
+python3 scripts/prepare_highres_assets.py \
+  examples/zebrafish/source_zebrafish_tail.png \
+  examples/zebrafish/output_v8/03_高清无损素材/highres \
+  --scale 2
+
 python3 scripts/build_zebrafish_masked_fullpanel_editable_v8.py \
-  output/03_高清无损素材/highres/source_highres_2x.png \
-  output
+  examples/zebrafish/output_v8/03_高清无损素材/highres/source_highres_2x.png \
+  examples/zebrafish/output_v8
 ```
 
 该脚本代表当前推荐的商业交付模式：
