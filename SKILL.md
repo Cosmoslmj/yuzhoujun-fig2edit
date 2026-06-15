@@ -1,6 +1,6 @@
 ---
 name: yuzhoujun-fig2edit
-description: Use when users want to reconstruct academic figures, scientific diagrams, slides, screenshots, or images into editable Office VBA Shapes, PowerPoint decks, SVG, scene manifests, or hybrid editable scientific figure formats.
+description: Use when users want image/screenshot/academic figure to editable PPT, editable SVG, Office Shapes, scene manifests, or say 科研图转可编辑PPT, 图片转可编辑PPT/SVG, PPT截图可编辑, 文字箭头可编辑, or Fig2Edit.
 ---
 
 # Yuzhoujun Fig2Edit

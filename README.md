@@ -59,16 +59,38 @@
 ### 方式 A：从 GitHub 安装
 
 ```bash
-git clone https://github.com/<你的用户名>/yuzhoujun-fig2edit.git
+git clone https://github.com/Cosmoslmj/yuzhoujun-fig2edit.git
 mkdir -p ~/.codex/skills
 ln -s "$(pwd)/yuzhoujun-fig2edit" ~/.codex/skills/yuzhoujun-fig2edit
 ```
 
 重启 Codex 后即可使用。
 
-### 方式 B：没有 GitHub，用 zip 包
+### 方式 B：Codex 一句话安装
 
-1. 下载 `yuzhoujun-fig2edit-full.zip`
+如果你使用的是 Codex，并且支持从 GitHub 安装 skill，可以直接对 Codex 说：
+
+```text
+帮我安装这个 skill：https://github.com/Cosmoslmj/yuzhoujun-fig2edit
+```
+
+或：
+
+```text
+帮我安装这个 skill：Cosmoslmj/yuzhoujun-fig2edit
+```
+
+安装完成后重启 Codex 或刷新 skill 列表即可。
+
+### 方式 C：没有 GitHub，用 Release zip 包
+
+1. 打开 GitHub Releases：
+
+```text
+https://github.com/Cosmoslmj/yuzhoujun-fig2edit/releases
+```
+
+2. 下载最新版本里的 `yuzhoujun-fig2edit-full.zip`
 2. 解压得到 `yuzhoujun-fig2edit/`
 3. 复制到 skills 目录
 
@@ -85,7 +107,7 @@ Windows:
 C:\Users\你的用户名\.codex\skills\yuzhoujun-fig2edit
 ```
 
-### 方式 C：平台不支持 Skill
+### 方式 D：平台不支持 Skill
 
 使用 `fig2edit-prompt.md`：
 
@@ -102,6 +124,26 @@ C:\Users\你的用户名\.codex\skills\yuzhoujun-fig2edit
 
 ```text
 用 $yuzhoujun-fig2edit 把这张科研图转成可编辑 PPT 和 SVG。复杂显微图/热图保留为高清 PNG 图层，文字、箭头、图例、标题尽量做成可编辑对象。不要压缩图片。
+```
+
+也可以不用记 skill 名，直接用自然语言调用：
+
+```text
+用科研图转可编辑 PPT 的技能处理这张图。
+```
+
+```text
+用图片转可编辑 PPT/SVG 的技能，把这张图转成可修改版本。
+```
+
+```text
+用 Yuzhoujun Fig2Edit 技能，把这张截图转成可编辑 PPT 和 SVG。
+```
+
+如果平台支持 `$skill-name`，最稳定的调用方式仍然是：
+
+```text
+用 $yuzhoujun-fig2edit 处理这张图。
 ```
 
 商业交付版：
