@@ -226,6 +226,22 @@ examples/zebrafish/output_v8/02_结构与报告/scene_manifest.json
 examples/zebrafish/output_v8/02_结构与报告/run_report.md
 ```
 
+原图：
+
+![斑马鱼科研复合图原图](examples/zebrafish/screenshots/01_source_zebrafish_tail.png)
+
+最终 PPT 可编辑工作页预览：
+
+![斑马鱼可编辑 PPT 预览](examples/zebrafish/screenshots/02_editable_ppt_preview.png)
+
+最终文件：
+
+![最终 PPT 和 SVG 文件](examples/zebrafish/screenshots/03_final_files_preview.png)
+
+输出目录结构：
+
+![输出目录结构](examples/zebrafish/screenshots/04_output_folder_preview.png)
+
 重新生成命令：
 
 ```bash
@@ -279,17 +295,5 @@ dist/fig2edit-prompt.md
 如果这个项目对你有帮助，欢迎 Star、反馈案例或赞助支持后续维护。后续会更新更多实用性功能 skill，减少重复工作。
 
 需要定制各种 Agent Skill、图片转可编辑 PPT/SVG 工作流、科研图处理流程或其它自动化 skill，可以联系作者定制处理。
-
-联系方式：
-
-```text
-lumeijun780
-```
-
-添加时请备注来源/意图，例如：
-
-```text
-GitHub - Fig2Edit 定制 skill
-```
 
 ![宇宙君个人信息](assets/contact-card.png)
