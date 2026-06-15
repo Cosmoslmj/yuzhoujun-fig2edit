@@ -66,9 +66,9 @@ ln -s "$(pwd)/yuzhoujun-fig2edit" ~/.codex/skills/yuzhoujun-fig2edit
 
 重启 Codex 后即可使用。
 
-### 方式 B：Codex 一句话安装
+### 方式 B：一句话安装
 
-如果你使用的是 Codex，并且支持从 GitHub 安装 skill，可以直接对 Codex 说：
+如果你使用的平台支持从 GitHub 安装 Skill / Agent Skill / Custom Skill，可以直接对 Agent 说：
 
 ```text
 帮我安装这个 skill：https://github.com/Cosmoslmj/yuzhoujun-fig2edit
@@ -80,7 +80,18 @@ ln -s "$(pwd)/yuzhoujun-fig2edit" ~/.codex/skills/yuzhoujun-fig2edit
 帮我安装这个 skill：Cosmoslmj/yuzhoujun-fig2edit
 ```
 
-安装完成后重启 Codex 或刷新 skill 列表即可。
+可用于这类平台：
+
+- Codex
+- Claude / Claude Code
+- OpenClaw
+- Hermes
+- WorkBuddy
+- 其它支持从 GitHub 安装 skill 的 Agent 平台
+
+如果平台不支持自动安装 GitHub skill，就使用下面的 Release zip 包安装方式。
+
+安装完成后重启 Agent、刷新 skill 列表，或重新打开会话即可。
 
 ### 方式 C：没有 GitHub，用 Release zip 包
 
@@ -138,6 +149,20 @@ C:\Users\你的用户名\.codex\skills\yuzhoujun-fig2edit
 
 ```text
 用 Yuzhoujun Fig2Edit 技能，把这张截图转成可编辑 PPT 和 SVG。
+```
+
+不同平台也可以这样说：
+
+```text
+调用图片转可编辑 PPT/SVG 的 skill。
+```
+
+```text
+使用 Fig2Edit，把这张图片变成可编辑 PPT 和 SVG。
+```
+
+```text
+用科研图可编辑化的技能处理这张论文图。
 ```
 
 如果平台支持 `$skill-name`，最稳定的调用方式仍然是：

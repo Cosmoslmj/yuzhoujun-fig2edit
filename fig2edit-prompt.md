@@ -139,3 +139,13 @@
 ```text
 请按 Yuzhoujun Fig2Edit 流程，把这张科研图转成可编辑 SVG 和 PowerPoint VBA。复杂显微图保留为局部图片，文字、箭头、框和标注尽量可编辑。
 ```
+
+## 安装提示
+
+如果平台支持从 GitHub 安装 Skill / Agent Skill / Custom Skill，用户可以直接说：
+
+```text
+帮我安装这个 skill：Cosmoslmj/yuzhoujun-fig2edit
+```
+
+适用平台包括 Codex、Claude / Claude Code、OpenClaw、Hermes、WorkBuddy，以及其它支持 GitHub skill 安装的 Agent。若平台不支持自动安装，可下载 Release zip 包并手动复制到该平台的 skills 目录，或直接使用本 prompt-only 文件。
