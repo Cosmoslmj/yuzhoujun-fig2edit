@@ -1,0 +1,6 @@
+interface:
+  display_name: "Yuzhoujun · Fig2Edit"
+  short_description: "把科研图和截图转换成高保真 PPT、可编辑文字箭头层、SVG 与结构报告。"
+  icon_large: "./assets/image-to-vba.svg"
+  brand_color: "#2563EB"
+  default_prompt: "用 $yuzhoujun-fig2edit 把这张科研图转成商业交付版：保真 PPT、可编辑文字箭头层、SVG 和 scene_manifest.json。"

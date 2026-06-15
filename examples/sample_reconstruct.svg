@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+
+  <defs>
+    <marker id="arrow-end" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="context-stroke" />
+    </marker>
+  </defs>
+  <rect id="canvas-background" x="0" y="0" width="800" height="450" fill="#ffffff" />
+  <rect id="E01" x="80" y="120" width="180" height="64" rx="12" ry="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <text id="T01" x="170" y="160.8" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#111111"><tspan x="170" dy="0">Input</tspan></text>
+  <line id="L01" x1="270" y1="152" x2="410" y2="152" fill="none" stroke="#111111" stroke-width="3" marker-end="url(#arrow-end)" />
+  <ellipse id="E02" cx="485" cy="160" rx="55" ry="55" fill="#ecfdf5" stroke="#059669" stroke-width="2" />
+</svg>

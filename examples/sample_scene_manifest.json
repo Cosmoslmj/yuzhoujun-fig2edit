@@ -1,0 +1,74 @@
+{
+  "version": "1.0",
+  "source": {
+    "path": "sample.png",
+    "width_px": 800,
+    "height_px": 450
+  },
+  "canvas": {
+    "width": 800,
+    "height": 450,
+    "unit": "px",
+    "background": "#ffffff"
+  },
+  "outputs": {
+    "svg": "sample_reconstruct.svg"
+  },
+  "palette": {
+    "ink": "#111111",
+    "accent": "#2563eb"
+  },
+  "elements": [
+    {
+      "id": "E01",
+      "type": "roundrect",
+      "bucket": "editable",
+      "bbox": [80, 120, 180, 64],
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "#2563eb",
+        "stroke_width": 2,
+        "radius": 12
+      },
+      "z": 1
+    },
+    {
+      "id": "T01",
+      "type": "textbox",
+      "bucket": "editable",
+      "bbox": [80, 137, 180, 30],
+      "text": "Input",
+      "style": {
+        "fill": "#111111",
+        "font_size": 22,
+        "font_weight": "700",
+        "align": "middle"
+      },
+      "z": 2
+    },
+    {
+      "id": "L01",
+      "type": "arrow",
+      "bucket": "editable",
+      "points": [[270, 152], [410, 152]],
+      "style": {
+        "stroke": "#111111",
+        "stroke_width": 3,
+        "arrow_end": true
+      },
+      "z": 3
+    },
+    {
+      "id": "E02",
+      "type": "ellipse",
+      "bucket": "editable",
+      "bbox": [430, 105, 110, 110],
+      "style": {
+        "fill": "#ecfdf5",
+        "stroke": "#059669",
+        "stroke_width": 2
+      },
+      "z": 4
+    }
+  ]
+}
