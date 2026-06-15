@@ -211,7 +211,9 @@ C:\Users\你的用户名\.codex\skills\yuzhoujun-fig2edit
 
 ## 示例案例
 
-本仓库内置了你这张斑马鱼科研复合图作为最终案例：
+本仓库内置了你这张斑马鱼科研复合图作为最终案例。
+
+案例名称：**基因表达谱组织特异性热图**
 
 ```text
 examples/zebrafish/source_zebrafish_tail.png
@@ -228,7 +230,23 @@ examples/zebrafish/output_v8/02_结构与报告/run_report.md
 
 原图：
 
-![斑马鱼科研复合图原图](examples/zebrafish/screenshots/01_source_zebrafish_tail.png)
+![基因表达谱组织特异性热图原图](examples/zebrafish/screenshots/01_source_zebrafish_tail.png)
+
+这张图是在 `image2` 模型里生成的科研绘图案例。
+
+具体关键词：
+
+```text
+出专业科研绘图插图：主题：基因表达谱组织特异性热图，《发育细胞》2025
+
+内容：这张多图展示了通过对斑马鱼胚胎（72 hpf）冷冻切片进行分析得到的组织特异性基因表达情况。图中包含一张解剖图，标明了脊髓、肌肉、脊索、表皮以及含有造血干细胞（HSPC）的尾部造血组织（CHT）的位置。热图显示了这些组织中的基因表达水平，并用黄蓝渐变突出显示了CHT中富集的基因。相应的荧光图像证实了Tg(kdrl:GFP)阳性内皮细胞的位置，这些内皮细胞定义了CHT。
+
+具体文案说明：“横截面示意图（左上）和层次聚类热图（右上）揭示了斑马鱼尾部背腹轴上与不同组织相对应的基因表达簇。底部示意图展示了利用kdrl:GFP转基因胚胎和FACS从整个胚胎中分离内皮细胞（ECs）进行RNA测序分析的策略。”
+```
+
+image2 关键词截图：
+
+![image2 关键词截图](examples/zebrafish/screenshots/05_image2_prompt_screenshot.png)
 
 最终 PPT 可编辑工作页预览：
 
@@ -245,14 +263,9 @@ examples/zebrafish/output_v8/02_结构与报告/run_report.md
 重新生成命令：
 
 ```bash
-python3 scripts/prepare_highres_assets.py \
-  examples/zebrafish/source_zebrafish_tail.png \
-  examples/zebrafish/output_v8/03_高清无损素材/highres \
-  --scale 2
+python3 scripts/prepare_highres_assets.py   examples/zebrafish/source_zebrafish_tail.png   examples/zebrafish/output_v8/03_高清无损素材/highres   --scale 2
 
-python3 scripts/build_zebrafish_masked_fullpanel_editable_v8.py \
-  examples/zebrafish/output_v8/03_高清无损素材/highres/source_highres_2x.png \
-  examples/zebrafish/output_v8
+python3 scripts/build_zebrafish_masked_fullpanel_editable_v8.py   examples/zebrafish/output_v8/03_高清无损素材/highres/source_highres_2x.png   examples/zebrafish/output_v8
 ```
 
 该脚本代表当前推荐的商业交付模式：
